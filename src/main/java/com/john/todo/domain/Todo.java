@@ -24,7 +24,7 @@ public class Todo implements Serializable{
 	
 	public Todo() {
 		super();
-		// TODO Auto-generated constructor stub
+	
 	}
 	
 	public Todo(Integer id, String titulo, String descricao, LocalDateTime dataFinal, boolean finalizado) {
