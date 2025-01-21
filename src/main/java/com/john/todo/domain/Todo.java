@@ -4,18 +4,18 @@ import java.time.LocalDateTime;
 import java.util.Objects;
 
 public class Todo {
-	
+
 	private Integer id;
 	private String titulo;
 	private String descricao;
 	private LocalDateTime dataFinal;
 	private boolean finalizado = false;
-	
+
 	public Todo() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	
+
 	public Todo(Integer id, String titulo, String descricao, LocalDateTime dataFinal, boolean finalizado) {
 		super();
 		this.id = id;
@@ -81,12 +81,5 @@ public class Todo {
 		Todo other = (Todo) obj;
 		return Objects.equals(id, other.id);
 	}
-
-
-	
-	
-	
-	
-	
 
 }
