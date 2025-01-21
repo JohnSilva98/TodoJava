@@ -75,6 +75,8 @@ public class Todo implements Serializable{
 	public void setFinalizado(boolean finalizado) {
 		this.finalizado = finalizado;
 	}
+	
+
 
 	@Override
 	public int hashCode() {
