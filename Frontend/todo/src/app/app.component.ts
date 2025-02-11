@@ -1,5 +1,4 @@
 import { Component } from "@angular/core";
-import { HttpClientModule } from "@angular/common/http";
 // import { RouterOutlet } from "@angular/router";
 import { HeaderComponent } from "./components/header/header.component";
 import { MatToolbarModule } from "@angular/material/toolbar";
@@ -18,7 +17,6 @@ import { MatIcon, MatIconModule } from "@angular/material/icon";
     ReadAllComponent,
     MatButtonModule,
     MatIconModule,
-    HttpClientModule,
   ],
 
   templateUrl: "app.component.html",
