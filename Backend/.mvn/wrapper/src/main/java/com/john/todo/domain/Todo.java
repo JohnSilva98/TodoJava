@@ -1,7 +1,7 @@
 package com.john.todo.domain;
 
 import java.io.Serializable;
-import java.time.LocalDateTime;
+import java.util.Date;
 import java.util.Objects;
 
 import jakarta.persistence.Entity;
@@ -19,7 +19,7 @@ public class Todo implements Serializable{
 	private Integer id;
 	private String titulo;
 	private String descricao;
-	private LocalDateTime dataFinal;
+	private Date dataFinal;
 	private boolean finalizado = false;
 	
 	public Todo() {
@@ -27,7 +27,7 @@ public class Todo implements Serializable{
 	
 	}
 	
-	public Todo(Integer id, String titulo, String descricao, LocalDateTime dataFinal, boolean finalizado) {
+	public Todo(Integer id, String titulo, String descricao, Date dataFinal, boolean finalizado) {
 		super();
 		this.id = id;
 		this.titulo = titulo;
@@ -60,11 +60,11 @@ public class Todo implements Serializable{
 		this.descricao = descricao;
 	}
 
-	public LocalDateTime getDataFinal() {
+	public Date getDataFinal() {
 		return dataFinal;
 	}
 
-	public void setDataFinal(LocalDateTime dataFinal) {
+	public void setDataFinal(Date dataFinal) {
 		this.dataFinal = dataFinal;
 	}
 
