@@ -22,6 +22,7 @@ export class ReadAllComponent {
   findAll(): void {
     this.service.findAll().subscribe((resposta) => {
       this.list = resposta;
+      console.log(this.list);
     });
   }
 }
